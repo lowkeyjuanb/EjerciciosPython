@@ -1,4 +1,4 @@
-# Listas 
+# # Listas 
 
 # Las listas permiten guardar MULTIPLES variables DENTRO de UNA variable.
 
@@ -33,20 +33,24 @@ print("Ejemplo de lista con constructor", ejemploConstructorLista)
 
 
 # Accesar a un elemento dentro de esta lista
-listaAlcohol = ["Tequila", "Vodka", "Whisky", "Ron"]
+listaAlcohol = ["Tequila", "Vodka", "Ron"]
 
 print("Accesa a n elemento dentro de una lista:", listaAlcohol[0])
 
 print("Accesa al ULTIMO elemento de una lista:", listaAlcohol[-1])
 
-print("Accesa a un rango de elementos dentro de una lista:", listaAlcohol[1:3])
+print("Accesa a un rango de elementos dentro de una lista:", listaAlcohol[0:2])
 
-print("Imprime los elementos desde el primero hasta n dato:", listaAlcohol[:2])
+print("Imprime los elementos desde el primero hasta n dato:", listaAlcohol[2:])
 
-# Ejemplo con condicionales:
+# # Ejemplo con condicionales:
 
-if "Tequila" in listaAlcohol:
-    print("Si esta el elemento Tequila en listaAlcohol")
+if ("Tequila" and "FourLoko") or "Vodka" in listaAlcohol:
+    print("Si esta el elemento Tequila y FourLoko o puro vodka en listaAlcohol")
+elif "Ron" in listaAlcohol:
+    print("Si esta el elemento Ron en listaAlcohol")
+else:
+    print("No existe el elemento en la lista")
 
 
 print("---------------------------------------\n")
@@ -66,14 +70,51 @@ print("Ejercios")
 # sort()	Sorts the list
 
 
-# Ejercicio 3.1 - Agrega un elemento al final de una lista
+# # Ejercicio 3.1 - Agrega un elemento al final de una lista.
+print("\nEjercicio 3.1\n")
+listaFrutas = ["Manzana", "Pera", "Platano"]
+print(listaFrutas)
+listaFrutas.append("Kiwi")
+print("Ejercicio 3.1: ", listaFrutas)
 
-# Ejercicio 3.2 - Cuenta cuantos elementos hay dentro de la lista
+# # Ejercicio 3.2 - Cuenta cuantos elementos especificos hay dentro de la lista
+print("\nEjercicio 3.2\n")
+listaFrutas = ["Manzana", "Pera", "Platano", "Naranja"]
+listaColores = ["Naranja", "Azul"]
+print(listaFrutas)
 
-# Ejercicio 3.3 - Agrega un elemento dentro de una posicion especificada de una lista.
+print("Ejercicio 3.2: ", listaFrutas.count(listaColores[0]))
 
-# Ejercicio 3.4 - Elimina un elemento de un valor especifico
+# # Ejercicio 3.3 - Agrega un elemento dentro de una posicion especificada de una lista.
+print("\nEjercicio 3.3\n")
+listaFrutas = ["Manzana", "Pera", "Platano", "Naranja"]
+print(listaFrutas)
+listaFrutas.insert(1,str("Uva"))
 
-# Ejercicio 3.5 - Elimina un elemento en una posicion especifica.
+print("Ejercicio 3.3: ", listaFrutas)
 
-# Ejercicio 3.6 - Ordena una lista
+# # Ejercicio 3.4 - Elimina un elemento de un valor especifico
+print("\nEjercicio 3.4\n")
+listaFrutas = ["Manzana", "Pera", "Platano", "Naranja"]
+print(listaFrutas)
+listaFrutas.insert(1,str("Uva"))
+
+print("Ejercicio 3.4: ", listaFrutas)
+
+# # Ejercicio 3.5 - Elimina un elemento en una posicion especifica.
+print("\nEjercicio 3.5\n")
+listaFrutas = ["Manzana", "Pera", "Platano", "Naranja"]
+print(listaFrutas)
+listaFrutas.pop(1)
+
+print("Ejercicio 3.5: ", listaFrutas)
+
+# # Ejercicio 3.6 - Ordena una lista
+print("\nEjercicio 3.5\n")
+listaFrutas = ["Manzana", "Pera", "Platano", "Naranja"]
+listaNumeros = [10.2, 5.2, 6.5]
+print(listaFrutas)
+listaFrutas.sort()
+
+
+print("Ejercicio 3.5: ", listaFrutas)
